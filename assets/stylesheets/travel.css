@@ -66,23 +66,39 @@ and use @import to include in this style sheet. The font in the image is "Banger
 - make sure the information in the card is at the bottom of the card using flexbox
   (there is bottom padding applied in common.css to keep it off the very bottom so it looks right)
 */
-.cards  {
-  
+.card  {
+
+  justify-content: flex-end;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding-bottom: none;
+  border: 1px solid red;
 }
 
 /*
 - Make the travel table div a flexbox container
 - using flexbox make sure the content is stacked and not in a row
-- make sure the content is centered in each card using flexbox
-*/
 
+*/
+#travel-table {
+/*none of the properties are being applied*/
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 /*
 - Make the footer div a flexbox container
 - make sure the copyright displays on the left and the social links display on the right using flexbox
 - make sure the content is vertically centered in the here div using flexbox
 */
-
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
 
 /*
 MEDIUM CHALLENGE:
