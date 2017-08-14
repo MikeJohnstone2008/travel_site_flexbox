@@ -73,7 +73,7 @@ and use @import to include in this style sheet. The font in the image is "Banger
   display: flex;
   align-items: center;
   padding-bottom: none;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 /*
@@ -100,6 +100,7 @@ and use @import to include in this style sheet. The font in the image is "Banger
   align-content: center;
 }
 
+
 /*
 MEDIUM CHALLENGE:
 Using media queries, hide the national bird column in the table when the screen is at a
@@ -109,3 +110,13 @@ screen is at a max width of 600px
 HINT:
 leverage the classes .bird and .population
 */
+@media (max-width: 800px) {
+  .bird {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .bird, .population{
+    display: none;
+  }
+}
